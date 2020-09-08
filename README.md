@@ -13,6 +13,9 @@ Data visualization and Data Processing for Machine Learning I Course
 1 source lacrime-env/bin/activate
 
 1 `pip install -r requirements.txt`
+May additionally require
+    * pip install geopandas
+    * pip install descartes
 
 ## Usage
 
