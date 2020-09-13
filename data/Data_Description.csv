@@ -4,26 +4,26 @@ Date Rptd,Date Crime was Reported in format: MM/DD/YYYY. The date range is betwe
 DATE OCC,Date Crime Occurred in format: MM/DD/YYYY. The date range is between 01/01/2010 and 12/31/2019.,Date & Time
 TIME OCC,Time Crime Occurred in 24 hour military time. The time range is between 0001 and 2359.,int64
 AREA,The LAPD has 21 Community Police Stations referred to as Geographic Areas within the department. These Geographic Areas are sequentially numbered from 1-21.,int64
-AREA NAME,"The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles.",Nominal Object
+AREA NAME,"The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles.",Object
 Rpt Dist No,"A four-digit code that represents a sub-area within a Geographic Area. All crime records reference the ""RD"" that it occurred in for statistical comparisons. The range here is between 100 (which is for Area 1 and Dist 00) and 2199 (which is for Area 21 and Dist 99).",int64
 Part 1-2,No clear description is available about this column. So this column will not be considered for modelling purposes.,int64
 Crm Cd,Indicates the crime committed. (Same as Crime Code 1). The range is between 110 and 956.,int64
-Crm Cd Desc,Defines the Crime Code provided.,Nominal Object
-Mocodes,Modus Operandi: Activities associated with the suspect in commission of the crime. See the link to the PDF for list of MO Codes in numerical order.,Nominal Object
+Crm Cd Desc,Defines the Crime Code provided.,Object
+Mocodes,Modus Operandi: Activities associated with the suspect in commission of the crime. See the link to the PDF for list of MO Codes in numerical order.,Object
 Vict Age,"Age of the Victim: Integer values, e.g. 2, 35, 99 etc.",int64
-Vict Sex,Sex of the Victim: F - Female| M - Male |X - Unknown,Nominal Object
-Vict Descent,Descent of the Victim (Code): A - Other Asian | B - Black | C - Chinese | D - Cambodian | F - Filipino | G - Guamanian | H - Hispanic/Latin/Mexican | I - American Indian/Alaskan Native | J - Japanese | K - Korean | L - Laotian | O - Other | P - Pacific Islander | S - Samoan | U - Hawaiian | V - Vietnamese | W - White | X - Unknown | Z - Asian Indian,Nominal Object
+Vict Sex,Sex of the Victim: F - Female| M - Male |X - Unknown,Object
+Vict Descent,Descent of the Victim (Code): A - Other Asian | B - Black | C - Chinese | D - Cambodian | F - Filipino | G - Guamanian | H - Hispanic/Latin/Mexican | I - American Indian/Alaskan Native | J - Japanese | K - Korean | L - Laotian | O - Other | P - Pacific Islander | S - Samoan | U - Hawaiian | V - Vietnamese | W - White | X - Unknown | Z - Asian Indian,Object
 Premis Cd,"The type of structure, vehicle, or location where the crime took place. The range is between 101 and 971.",float64
-Premis Desc,Defines the Premise Code provided.,Nominal Object
+Premis Desc,Defines the Premise Code provided.,Object
 Weapon Used Cd,The type of weapon used in the crime. The range is between 101 and 516.,float64
-Weapon Desc,Defines the Weapon Used Code provided.,Nominal Object
-Status,Status of the case. (IC is the default),Nominal Object
-Status Desc,Defines the Status Code provided.,Nominal Object
+Weapon Desc,Defines the Weapon Used Code provided.,Object
+Status,Status of the case. (IC is the default),Object
+Status Desc,Defines the Status Code provided.,Object
 Crm Cd 1,"Indicates the crime committed. Crime Code 1 is the primary and most serious one. Crime Code 2, 3, and 4 are respectively less serious offenses. Lower crime class numbers are more serious.",float64
 Crm Cd 2,"May contain a code for an additional crime, less serious than Crime Code 1.",float64
 Crm Cd 3,"May contain a code for an additional crime, less serious than Crime Code 1.",float64
 Crm Cd 4,"May contain a code for an additional crime, less serious than Crime Code 1.",float64
-LOCATION,Street address of crime incident rounded to the nearest hundred block to maintain anonymity.,Nominal Object
-Cross Street,Cross Street of rounded Address,Nominal Object
+LOCATION,Street address of crime incident rounded to the nearest hundred block to maintain anonymity.,Object
+Cross Street,Cross Street of rounded Address,Object
 LAT,Latitude. The valid ranges are between: 33.3427 and 34.7907.,float64
 LON,Longtitude. The valid ranges are between: -118.8279 and -117.6596.,float64
